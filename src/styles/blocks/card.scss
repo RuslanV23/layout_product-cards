@@ -1,13 +1,13 @@
-.product-card {
+.card {
+  align-items: center;
   box-sizing: border-box;
+  border: 1px solid $card-border-color;
+  border-radius: 5px;
+  background-color: $color-white;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 200px;
   height: 406px;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
-  background-color: #fff;
+  width: 200px;
 
   &__icon {
     width: 160px;
@@ -20,12 +20,12 @@
   }
 
   &__name {
-    margin-bottom: 0;
-    margin-top: 40px;
+    color: $first-color;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-    color: $first-color;
+    margin-bottom: 0;
+    margin-top: 40px;
   }
 
   &__code {
@@ -70,20 +70,20 @@
   }
 
   &__button-buy {
+    background-color: $blue-accent;
+    border-radius: 5px;
+    border: $blue-accent solid 1px;
+    color: $color-white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
     margin-top: 16px;
     margin-bottom: 0;
     width: 166px;
     height: 40px;
-    background-color: $blue-accent;
-    color: white;
-    border-radius: 5px;
-    border: $blue-accent solid 1px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 16px;
 
     &:hover {
-      background-color: white;
+      background-color: $color-white;
       color: $blue-accent;
     }
   }
