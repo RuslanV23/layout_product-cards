@@ -1,18 +1,18 @@
 .card {
   align-items: center;
-  box-sizing: border-box;
+  background-color: $color-white;
   border: 1px solid $card-border-color;
   border-radius: 5px;
-  background-color: $color-white;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: 406px;
   width: 200px;
 
   &__icon {
-    width: 160px;
     height: 134px;
     margin-top: 32px;
+    width: 160px;
   }
 
   &__container {
@@ -36,9 +36,9 @@
   }
 
   &__reviews-blok {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 17px;
     margin-bottom: 0;
   }
@@ -49,9 +49,9 @@
   }
 
   &__price-blok {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 23px;
     margin-bottom: 0;
   }
@@ -65,22 +65,25 @@
   &__price-number {
     color: $first-color;
     font-size: 16px;
-    margin: 0;
     font-weight: 700;
+    margin: 0;
   }
 
   &__button-buy {
+    align-items: center;
     background-color: $blue-accent;
     border-radius: 5px;
     border: $blue-accent solid 1px;
+    box-sizing: border-box;
     color: $color-white;
-    font-size: 13px;
+    display: flex;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 16px;
+    height: 40px;
+    justify-content: center;
     margin-top: 16px;
     margin-bottom: 0;
     width: 166px;
-    height: 40px;
 
     &:hover {
       background-color: $color-white;
